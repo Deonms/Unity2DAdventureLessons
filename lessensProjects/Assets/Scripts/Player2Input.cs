@@ -3,7 +3,9 @@ using UnityEngine;
 public class Player2Input : MonoBehaviour
 {
     [SerializeField] private float _jumpPower = 10;
-    [SerializeField] private float _walkSpeed = 0.01f;
+    [SerializeField] private float _walkSpeed = 10;
+    [SerializeField] private MovementPlayers _playerMovementSideways;
+    [SerializeField] private MovementPlayers _playerMovementUp;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,19 +20,17 @@ public class Player2Input : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
         {
             print("ik heb Boven Arrow ingedrukt");
-            transform.Translate(Vector3.up * _jumpPower * Time.deltaTime, Space.World);
+            _playerMovementUp.MovePlayerSideWays(Vector2.up);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             print("Ik heb Linker Arrow ingedrukt");
-            Vector3 position = new Vector3(X = (_walkSpeed), Y, 0);
-            transform.position -= position;
+            _playerMovementSideways.MovePlayerSideWays(Vector2.left);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             print("Ik heb Rechter Arrow ingedrukt");
-            Vector3 position = new Vector3(X = (_walkSpeed), Y, 0);
-            transform.position += position;
+            _playerMovementSideways.MovePlayerSideWays(Vector2.right);
         }
     }
 }

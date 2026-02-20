@@ -621,6 +621,7 @@ GameObject:
   - component: {fileID: 1744720980}
   - component: {fileID: 1744720981}
   - component: {fileID: 1744720982}
+  - component: {fileID: 1744720983}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Untagged
@@ -785,6 +786,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _jumpPower: 10
   _walkSpeed: 0.01
+--- !u!114 &1744720983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744720977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e8162719dbb3948ad6000bd120388d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumpPower: 10
+  _walkSpeed: 0.01
 --- !u!1 &1770522129
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,6 +947,7 @@ GameObject:
   - component: {fileID: 2088718533}
   - component: {fileID: 2088718535}
   - component: {fileID: 2088718536}
+  - component: {fileID: 2088718537}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -1092,6 +1108,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cb11715d3c26204a982fd1fe4520612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumpPower: 10
+  _walkSpeed: 0.01
+  _playerMovementSideways: {fileID: 2088718537}
+  _playerMovementUp: {fileID: 2088718537}
+--- !u!114 &2088718537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088718530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e8162719dbb3948ad6000bd120388d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _jumpPower: 10
