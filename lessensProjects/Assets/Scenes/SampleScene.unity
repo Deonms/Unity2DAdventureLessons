@@ -786,6 +786,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _jumpPower: 10
   _walkSpeed: 0.01
+  _playerMovementSideways: {fileID: 1744720983}
+  _playerMovementUp: {fileID: 1744720983}
 --- !u!114 &1744720983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -799,7 +801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _jumpPower: 10
-  _walkSpeed: 0.01
+  _walkSpeed: 10
 --- !u!1 &1770522129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,7 +1129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _jumpPower: 10
-  _walkSpeed: 0.01
+  _walkSpeed: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
