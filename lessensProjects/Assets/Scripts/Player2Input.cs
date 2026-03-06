@@ -6,6 +6,7 @@ public class Player2Input : MonoBehaviour
     [SerializeField] private float _walkSpeed = 10;
     [SerializeField] private MovementPlayers _playerMovementSideways;
     [SerializeField] private MovementPlayers _playerMovementUp;
+    [SerializeField] private string _goundTag = "Ground";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

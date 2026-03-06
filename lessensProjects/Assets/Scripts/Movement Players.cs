@@ -12,4 +12,5 @@ public class MovementPlayers : MonoBehaviour
     {
         transform.position += new Vector3(direction.x, direction.y, 0) * _jumpPower * Time.deltaTime;
     }
+
 }
