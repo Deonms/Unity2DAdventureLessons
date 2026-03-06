@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7064641707992528953
+--- !u!1 &3633391349581579426
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7214399340947343451}
-  - component: {fileID: 1690733834592149457}
-  - component: {fileID: 7285049418105308529}
-  - component: {fileID: 3713986640605285723}
-  - component: {fileID: 2696779048350733648}
-  - component: {fileID: 8691048371780107759}
+  - component: {fileID: 1900230605063976707}
+  - component: {fileID: 1091463195447840300}
+  - component: {fileID: 4605773315979249532}
+  - component: {fileID: 888017306171675904}
+  - component: {fileID: 1203171262253834734}
+  - component: {fileID: 8118047471762045226}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -21,13 +21,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7214399340947343451
+--- !u!4 &1900230605063976707
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7064641707992528953}
+  m_GameObject: {fileID: 3633391349581579426}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.13, y: -2.66, z: 0}
@@ -36,13 +36,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1690733834592149457
+--- !u!212 &1091463195447840300
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7064641707992528953}
+  m_GameObject: {fileID: 3633391349581579426}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -91,14 +91,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &7285049418105308529
+--- !u!50 &4605773315979249532
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7064641707992528953}
+  m_GameObject: {fileID: 3633391349581579426}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -118,13 +118,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &3713986640605285723
+--- !u!61 &888017306171675904
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7064641707992528953}
+  m_GameObject: {fileID: 3633391349581579426}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -164,33 +164,59 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2696779048350733648
+--- !u!114 &1203171262253834734
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7064641707992528953}
+  m_GameObject: {fileID: 3633391349581579426}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cb11715d3c26204a982fd1fe4520612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpPower: 10
-  _walkSpeed: 0.01
-  _playerMovementSideways: {fileID: 8691048371780107759}
-  _playerMovementUp: {fileID: 8691048371780107759}
---- !u!114 &8691048371780107759
+  _goundTag: Ground
+  OnPlayerInputRecieve:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8118047471762045226}
+        m_TargetAssemblyTypeName: MovementPlayers, Assembly-CSharp
+        m_MethodName: MovePlayerSideWays
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8118047471762045226}
+        m_TargetAssemblyTypeName: MovementPlayers, Assembly-CSharp
+        m_MethodName: MovePlayerSideWays
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8118047471762045226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7064641707992528953}
+  m_GameObject: {fileID: 3633391349581579426}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38e8162719dbb3948ad6000bd120388d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpPower: 10
-  _walkSpeed: 10
+  _jumpPower: 3
+  _walkSpeed: 3
+  _player1Input: {fileID: 1203171262253834734}
+  _player2Input: {fileID: 0}
