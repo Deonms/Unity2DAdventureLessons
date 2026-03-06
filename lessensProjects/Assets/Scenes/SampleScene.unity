@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 460459292}
   - component: {fileID: 460459291}
   m_Layer: 0
-  m_Name: bottem part
+  m_Name: bottem part (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,9 +149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b020210bac2de4090a6074e21a219e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _top: 3.35
-  _bottem: -8.29
-  _movementSpeed: 1
+  _speed: 2
+  _points: []
+  _playerTag: Player
 --- !u!212 &460459292
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -215,8 +215,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460459290}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.97, y: -8.2, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.97, y: -9, z: 2}
   m_LocalScale: {x: 5.5144, y: 0.5641, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -676,7 +676,7 @@ GameObject:
   - component: {fileID: 1254262285}
   - component: {fileID: 1254262284}
   m_Layer: 0
-  m_Name: top part
+  m_Name: top part (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -694,9 +694,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b020210bac2de4090a6074e21a219e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _top: 3.35
-  _bottem: -8.29
-  _movementSpeed: 1
+  _speed: 2
+  _points: []
+  _playerTag: Player
 --- !u!212 &1254262285
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -760,8 +760,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254262282}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.97, y: 3.35, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.97, y: 5.69, z: 2}
   m_LocalScale: {x: 5.5144, y: 0.5641, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1053,7 +1053,7 @@ GameObject:
   - component: {fileID: 1893260719}
   - component: {fileID: 1893260718}
   m_Layer: 0
-  m_Name: Moving Platform
+  m_Name: Moving Platform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1123,7 +1123,7 @@ Transform:
   m_GameObject: {fileID: 1893260713}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.97, y: -2.25, z: 0}
+  m_LocalPosition: {x: -12.97, y: -8.99, z: 2}
   m_LocalScale: {x: 5.5144, y: 0.5641, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1206,9 +1206,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b020210bac2de4090a6074e21a219e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _top: 0
-  _bottem: 0
-  _movementSpeed: 0
+  _speed: 2
+  _points:
+  - {fileID: 1254262286}
+  - {fileID: 460459293}
+  _playerTag: Player
 --- !u!1 &2049091251
 GameObject:
   m_ObjectHideFlags: 0
