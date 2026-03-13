@@ -9,7 +9,7 @@ public class MovingPlatform : MonoBehaviour
     private int i;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
         transform.position = _points[0].position;
     }
