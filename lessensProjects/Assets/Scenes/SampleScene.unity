@@ -4029,7 +4029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091410207898564092, guid: 40126b7fd5c686b49ab3470784fc21e7, type: 3}
       propertyPath: _speed
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6091410207898564092, guid: 40126b7fd5c686b49ab3470784fc21e7, type: 3}
       propertyPath: '_points.Array.data[0]'
