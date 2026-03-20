@@ -3,9 +3,7 @@ using UnityEngine.Events;
 
 public class Player2Input : MonoBehaviour
 {
-    [SerializeField] private string _goundTag = "Ground";
-
-    public UnityEvent<Vector2> OnPlayerInputRecieve = new UnityEvent<Vector2>();
+     public UnityEvent<Vector2> OnPlayerInputRecieve = new UnityEvent<Vector2>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

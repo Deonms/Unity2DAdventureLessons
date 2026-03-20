@@ -25,7 +25,7 @@ public class MovingPlatform : MonoBehaviour
                 i = 0;
             }
         }
-
+        //laat de platform bewegen naar de target platforms
         transform.position = Vector2.MoveTowards(transform.position, _points[i].position, _speed * Time.deltaTime);
     }
 
@@ -33,7 +33,7 @@ public class MovingPlatform : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(_playerTag))
         {
-            collision.transform.SetParent(transform);
+            collision.transform.SetParent(transform); //set de speler een child als ze op de moving platform staan
         }
     }
 
@@ -41,7 +41,7 @@ public class MovingPlatform : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(_playerTag))
         {
-            collision.transform.SetParent(null);
+            collision.transform.SetParent(null); //haalt de speler weg van child van de moving platform omdat ze er niet meer op staan
         }
     }
 }

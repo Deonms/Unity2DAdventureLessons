@@ -3,6 +3,7 @@ using UnityEngine;
 public class backTeleporter : MonoBehaviour
 {
     [SerializeField] private string _playertag = "Player";
+    //dit zegt waar de speler heen moet uiteindelijk:
     [SerializeField] float _respawnX;
     [SerializeField] float _respawnY;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -16,11 +17,11 @@ public class backTeleporter : MonoBehaviour
     {
        
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision) //checkt op collision
     {
-        if (collision.gameObject.CompareTag(_playertag))
+        if (collision.gameObject.CompareTag(_playertag)) //checkt of de object die collision met dit krijgt de player tag heeft zo ja dan voet hij dit uit
         {
-            Vector3 position = new Vector3(_respawnX, _respawnY, -1f);
+            Vector3 position = new Vector3(_respawnX, _respawnY, -1f); //zet de speler terug waar die heen moet
             collision.gameObject.transform.position = position;
         }
 
