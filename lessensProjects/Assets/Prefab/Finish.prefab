@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521d55f829d7c55488a0f5eab01af463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player1: {fileID: 0}
-  _player2: {fileID: 0}
+  _player1: {fileID: 3633391349581579426, guid: e221d561377d29b4ba62ce3fc71c7af8, type: 3}
+  _player2: {fileID: 1105213600802161155, guid: 7f5121dcde99e7640ac488be90d5d7c5, type: 3}
   _maincamera: {fileID: 0}
   _toTeleportXPlayer: -15.72
   _toTeleportYPlayer: 7.7
