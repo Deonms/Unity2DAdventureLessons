@@ -15,9 +15,9 @@ public class MovementPlayers : MonoBehaviour
         _player1Input.OnPlayerInputRecieve.AddListener(MovePlayerSideWays);
         if (_player1Input == null) ;
         _player2Input.OnPlayerInputRecieve.AddListener(MovePlayerSideWays);
-        if (_player4Input == null) ;
-        _player3Input.OnPlayerInputRecieve.AddListener(MovePlayerSideWays);
         if (_player3Input == null) ;
+        _player3Input.OnPlayerInputRecieve.AddListener(MovePlayerSideWays);
+        if (_player4Input == null) ;
         _player4Input.OnPlayerInputRecieve.AddListener(MovePlayerSideWays);
     }
     public void MovePlayerSideWays(Vector2 direction)

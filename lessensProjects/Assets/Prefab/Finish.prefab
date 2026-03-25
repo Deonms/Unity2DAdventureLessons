@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 21.9266, y: 27.4054, z: 0}
-  m_LocalScale: {x: 1.4835833, y: 0.1484533, z: 1}
+  m_LocalScale: {x: 1.5, y: 0.1484533, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2425328176129594118}
@@ -151,6 +151,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player1: {fileID: 3633391349581579426, guid: e221d561377d29b4ba62ce3fc71c7af8, type: 3}
   _player2: {fileID: 1105213600802161155, guid: 7f5121dcde99e7640ac488be90d5d7c5, type: 3}
+  _player3: {fileID: 0}
+  _player4: {fileID: 0}
   _maincamera: {fileID: 0}
   _toTeleportXPlayer: -15.72
   _toTeleportYPlayer: 7.7
