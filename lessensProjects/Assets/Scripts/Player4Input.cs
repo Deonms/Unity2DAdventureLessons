@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Player3Input : MonoBehaviour
+public class Player4Input : MonoBehaviour
 {
     public UnityEvent<Vector2> OnPlayerInputRecieve = new UnityEvent<Vector2>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,15 +15,15 @@ public class Player3Input : MonoBehaviour
     {
         float X = 0;
         float Y = 0;
-        if (Input.GetKey(KeyCode.Keypad8))
+        if (Input.GetKey(KeyCode.U))
         {
             OnPlayerInputRecieve.Invoke(Vector2.up);
         }
-        if (Input.GetKey(KeyCode.Keypad4))
+        if (Input.GetKey(KeyCode.H))
         {
             OnPlayerInputRecieve.Invoke(Vector2.left);
         }
-        else if (Input.GetKey(KeyCode.Keypad6))
+        else if (Input.GetKey(KeyCode.K))
         {
             OnPlayerInputRecieve.Invoke(Vector2.right);
         }
