@@ -13,8 +13,6 @@ public class Player2Input : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float X = 0;
-        float Y = 0;
         if (Input.GetKey(KeyCode.UpArrow))
         {
             OnPlayerInputRecieve.Invoke(Vector2.up);

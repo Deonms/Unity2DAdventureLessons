@@ -10,7 +10,7 @@ public class MovementPlayers : MonoBehaviour
     {
         if(_player2Input == null)
         _player1Input.OnPlayerInputRecieve.AddListener(MovePlayerSideWays);
-        if (_player1Input == null) ;
+        if (_player1Input == null)
         _player2Input.OnPlayerInputRecieve.AddListener(MovePlayerSideWays);
        }
     public void MovePlayerSideWays(Vector2 direction)

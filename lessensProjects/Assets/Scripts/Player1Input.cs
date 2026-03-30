@@ -14,8 +14,6 @@ public class Player1Input : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float X = 0;
-        float Y = 0;
         if (Input.GetKey(KeyCode.W))
         {
             OnPlayerInputRecieve.Invoke(Vector2.up);
