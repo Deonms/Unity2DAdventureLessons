@@ -4,6 +4,7 @@ public class teleporter : MonoBehaviour
 {
     [SerializeField] private GameObject _player1; //om de gameobject speler 1 te krijgen
     [SerializeField] private GameObject _player2; //om de gameobject speler 2 te krijgen
+    [SerializeField] private GameObject _player3;
     [SerializeField] private GameObject _maincamera; //om de gameobject Camera te krijgen
     //om te kijken waar naartoe de spelers en camera geteleporteert moet worden
     [SerializeField] private float _toTeleportXPlayer;
@@ -29,10 +30,11 @@ public class teleporter : MonoBehaviour
         {
             playerCount++;
         }
-        if(playerCount == 2) //checkt of er 4 spelers erop staan zo ja dan worden ze pas geteleporteert
+        if(playerCount == 3) //checkt of er 4 spelers erop staan zo ja dan worden ze pas geteleporteert
         {
             _player1.transform.position = new Vector3(_toTeleportXPlayer, _toTeleportYPlayer+1, 0);
             _player2.transform.position = new Vector3(_toTeleportXPlayer, _toTeleportYPlayer, 0);
+            _player3.transform.position = new Vector3(_toTeleportXPlayer, _toTeleportYPlayer, 0);
             _maincamera.transform.position = new Vector3(_toTeleportXCamera, _toTeleportYCamera, -10f); ;
         }
      }
